@@ -1,0 +1,1267 @@
+# coding: utf-8
+############################################################################RESTRAUNT CLASS (ALLOWS RESTRAUNT TO MAKE DIFFERENT VERSIONS OF ITSELF)
+class Attraction_r
+  attr_accessor :p, :l, :r, :n, :ft, :at, :f_f, :o_21
+end
+##########################################################
+@r_location = ['320 E Main St', '228 E Main St #3649', '110 N Townsend Ave','347 E Main St','435 S Townsend Ave', '44 S Grand Ave'] ## LOCATION FOR RESTRAUNTS
+@r_price = ['$', '$$', '$$$'] #PRICE INDEX
+@r_rating = ['1 Stars', '2 Stars','3 Stars','4 Stars','5 Stars'] #RATINGS
+@r_food_type = ['Brewery','Japanese','Italian','Mexican','Thai','Hamburger','Indian'] #FOOD TYPE
+@r_name = ['Colorado Boy','Hiro Japanese Steakhouse','Trattoria Di Sofia','Double Barrel Taco Company','99 Thai Food',"Amelia's Hacienda Restaurante"] #RESTRAUNT NAMES
+@f_f = ['Yes', 'No']
+@o_21 = ['Yes', 'No']
+@a_t = ['Restraunts']
+#########################################################
+#########################################################RESTRAUNTS
+a1r = Attraction_r.new() #CREATING FIRST ITERATION OF RESTRAUNT
+a1r.p = @r_price[0] 
+a1r.l = @r_location[0]
+a1r.r = @r_rating[3]
+a1r.n = @r_name[0]
+a1r.at = @a_t[0]
+a1r.f_f = @f_f[0]
+a1r.o_21 = @o_21[1]
+a1r.ft = @r_food_type[0]
+####################################################
+a2r = Attraction_r.new()
+a2r.p = @r_price[2]
+a2r.l = @r_location[1]
+a2r.r = @r_rating[3]
+a2r.n = @r_name[1]
+a2r.at = @a_t[0]
+a2r.f_f = @f_f[0]
+a2r.o_21 = @o_21[1]
+a2r.ft = @r_food_type[1]
+################################################
+a3r = Attraction_r.new()
+a3r.p = @r_price[1]
+a3r.l = @r_location[2]
+a3r.r = @r_rating[3]
+a3r.n = @r_name[2]
+a3r.at = @a_t[0]
+a3r.f_f = @f_f[0]
+a3r.o_21 = @o_21[1]
+a3r.ft = @r_food_type[3]
+################################################
+a4r = Attraction_r.new()
+a4r.p = @r_price[1]
+a4r.l = @r_location[3]
+a4r.r = @r_rating[3]
+a4r.n = @r_name[3]
+a4r.at = @a_t[0]
+a4r.f_f = @f_f[0]
+a4r.o_21 = @o_21[1]
+a4r.ft = @r_food_type[3]
+################################################
+a5r = Attraction_r.new()
+a5r.p = @r_price[0]
+a5r.l = @r_location[4]
+a5r.r = @r_rating[2]
+a5r.n = @r_name[4]
+a5r.at = @a_t[0]
+a5r.f_f = @f_f[0]
+a5r.o_21 = @o_21[1]
+a5r.ft = @r_food_type[4]
+################################################
+a6r = Attraction_r.new()
+a6r.p = @r_price[1]
+a6r.l = @r_location[5]
+a6r.r = @r_rating[4]
+a6r.n = @r_name[5]
+a6r.at = @a_t[0]
+a6r.f_f = @f_f[0]
+a6r.o_21 = @o_21[1]
+a6r.ft = @r_food_type[3]
+################################################NEW CATAGORY/CLASS FOR MUSEUMS
+
+class Attraction_m
+  attr_accessor :p, :l, :r, :n, :at, :ff, :o21
+end
+######################################################### SAME IDEA AS RESTRAUNT
+@r1l = ['224 Mountain Avenue, Berthoud, CO','406Â½ W Rainbow Blvd, Salida, CO','1750 13th Street, Boulder, CO','200 4th Street, Estes Park, CO','511 East Main Street, Buena Vista, CO','714 8th Street, Greeley, CO','503 North Lincoln Avenue, Loveland, CO','502 Marion, Platteville, CO','100 West 14th Avenue Parkway, Denver, CO','7711 East Academy Boulevard, Denver, CO']
+@r1p = ['$']
+@r1r = ['1 Stars', '2 Stars','3 Stars','4 Stars','5 Stars']
+@r1n = ['Little Thompson Valley Pioneer Museum','Salida Museum Association','Boulder Museum Of Contemporary Art','Estes Park Museum','Buena Vista Heritage Museum','Greeley History Museums','Loveland Museum And Gallery','Platteville Pioneer Museum','Denver Art Museum','Wings Over The Rockies Air And Space Museum']
+@r1at = ['Museums']
+@r1ff = ['Yes']
+@r1o21 = ['No']
+#########################################################1
+b2r = Attraction_m.new() #CREATING FIRST MUSEUM
+b2r.p = @r1p[0]
+b2r.l = @r1l[0]
+b2r.r = @r1r[3]
+b2r.n = @r1n[0]
+b2r.at = @r1at[0]
+b2r.ff = @r1ff[0]
+b2r.o21 = @r1o21[0]
+#########################################################2
+b3r = Attraction_m.new()
+b3r.p = @r1p[0]
+b3r.l = @r1l[1]
+b3r.r = @r1r[4]
+b3r.n = @r1n[1]
+b3r.at = @r1at[0]
+b3r.ff = @r1ff[0]
+b3r.o21 = @r1o21[0]
+#########################################################3
+b4r = Attraction_m.new()
+b4r.p = @r1p[0]
+b4r.l = @r1l[2]
+b4r.r = @r1r[3]
+b4r.n = @r1n[2]
+b4r.at = @r1at[0]
+b4r.ff = @r1ff[0]
+b4r.o21 = @r1o21[0]
+#########################################################4
+b5r = Attraction_m.new()
+b5r.p = @r1p[0]
+b5r.l = @r1l[3]
+b5r.r = @r1r[3]
+b5r.n = @r1n[3]
+b5r.at = @r1at[0]
+b5r.ff = @r1ff[0]
+b5r.o21 = @r1o21[0]
+#########################################################5
+b6r = Attraction_m.new()
+b6r.p = @r1p[0]
+b6r.l = @r1l[4]
+b6r.r = @r1r[4]
+b6r.n = @r1n[4]
+b6r.at = @r1at[0]
+b6r.ff = @r1ff[0]
+b6r.o21 = @r1o21[0]
+#########################################################6
+b7r = Attraction_m.new()
+b7r.p = @r1p[0]
+b7r.l = @r1l[5]
+b7r.r = @r1r[3]
+b7r.n = @r1n[5]
+b7r.at = @r1at[0]
+b7r.ff = @r1ff[0]
+b7r.o21 = @r1o21[0]
+#########################################################7
+b8r = Attraction_m.new()
+b8r.p = @r1p[0]
+b8r.l = @r1l[6]
+b8r.r = @r1r[4]
+b8r.n = @r1n[6]
+b8r.at = @r1at[0]
+b8r.ff = @r1ff[0]
+b8r.o21 = @r1o21[0]
+#########################################################8
+b9r = Attraction_m.new()
+b9r.p = @r1p[0]
+b9r.l = @r1l[7]
+b9r.r = @r1r[3]
+b9r.n = @r1n[7]
+b9r.at = @r1at[0]
+b9r.ff = @r1ff[0]
+b9r.o21 = @r1o21[0]
+#########################################################9
+bzr = Attraction_m.new()
+bzr.p = @r1p[0]
+bzr.l = @r1l[8]
+bzr.r = @r1r[2]
+bzr.n = @r1n[8]
+bzr.at = @r1at[0]
+bzr.ff = @r1ff[0]
+bzr.o21 = @r1o21[0]
+#########################################################10
+bxr = Attraction_m.new()
+bxr.p = @r1p[0]
+bxr.l = @r1l[9]
+bxr.r = @r1r[2]
+bxr.n = @r1n[9]
+bxr.at = @r1at[0]
+bxr.ff = @r1ff[0]
+bxr.o21 = @r1o21[0]
+#########################################################NEW CATAGORY/CLASS FOR CLIMBING
+
+class Attraction_c
+  attr_accessor :p, :l, :r, :n, :at, :ff, :o21
+end
+#########################################################
+@r2p = ['$']
+@r2l = ['Rocky Mountain National Park','East side of park at the Visitor and Nature Center','2989 CO-83, Franktown, CO 80116','9 Kneale Rd, Eldorado Springs, CO 80025','The Flatirons','Estes Park Valley','Devil’s Head','13885 County Road 217','18 miles west of Twin Lakes and 19 miles east of Aspen and crosses the Continental Divide over the Sawatch Range.','Boulder Canyon','Clear Creek Canyon RD']
+@r2r = ['1 Stars', '2 Stars','3 Stars','4 Stars','5 Stars']
+@r2n = ['Rocky Mountain National Park','Garden of the Gods','Castlewood Canyon State Park','Eldorado Canyon State Park', 'The Flatirons','Edge of Time','Devil’s Head','Rifle Mountain Park','Independence Pass','Boulder Canyon','Clear Creek Canyon']
+@r2at = ['Climbing']
+@r2ff = ['Yes']
+@r2o21 = ['No']
+#########################################################1
+c0r = Attraction_c.new() #CREATING FIRST CLIMBING ITERATION
+c0r.p = @r2p[0]
+c0r.l = @r2l[0]
+c0r.r = @r2r[4]
+c0r.n = @r2n[0]
+c0r.at = @r2at[0]
+c0r.ff = @r2ff[0]
+c0r.o21 = @r2o21[0]
+#########################################################2
+c1r = Attraction_c.new()
+c1r.p = @r2p[0]
+c1r.l = @r2l[1]
+c1r.r = @r2r[4]
+c1r.n = @r2n[1]
+c1r.at = @r2at[0]
+c1r.ff = @r2ff[0]
+c1r.o21 = @r2o21[0]
+#########################################################3
+c2r = Attraction_c.new()
+c2r.p = @r2p[0]
+c2r.l = @r2l[2]
+c2r.r = @r2r[3]
+c2r.n = @r2n[2]
+c2r.at = @r2at[0]
+c2r.ff = @r2ff[0]
+c2r.o21 = @r2o21[0]
+#########################################################4
+c3r = Attraction_c.new()
+c3r.p = @r2p[0]
+c3r.l = @r2l[3]
+c3r.r = @r2r[3]
+c3r.n = @r2n[3]
+c3r.at = @r2at[0]
+c3r.ff = @r2ff[0]
+c3r.o21 = @r2o21[0]
+#########################################################5
+c4r = Attraction_c.new()
+c4r.p = @r2p[0]
+c4r.l = @r2l[4]
+c4r.r = @r2r[3]
+c4r.n = @r2n[4]
+c4r.at = @r2at[0]
+c4r.ff = @r2ff[0]
+c4r.o21 = @r2o21[0]
+#########################################################6
+c5r = Attraction_c.new()
+c5r.p = @r2p[0]
+c5r.l = @r2l[5]
+c5r.r = @r2r[4]
+c5r.n = @r2n[5]
+c5r.at = @r2at[0]
+c5r.ff = @r2ff[0]
+c5r.o21 = @r2o21[0]
+#########################################################7
+c6r = Attraction_c.new()
+c6r.p = @r2p[0]
+c6r.l = @r2l[6]
+c6r.r = @r2r[3]
+c6r.n = @r2n[6]
+c6r.at = @r2at[0]
+c6r.ff = @r2ff[0]
+c6r.o21 = @r2o21[0]
+#########################################################8
+c7r = Attraction_c.new()
+c7r.p = @r2p[0]
+c7r.l = @r2l[7]
+c7r.r = @r2r[2]
+c7r.n = @r2n[7]
+c7r.at = @r2at[0]
+c7r.ff = @r2ff[0]
+c7r.o21 = @r2o21[0]
+#########################################################9
+c8r = Attraction_c.new()
+c8r.p = @r2p[0]
+c8r.l = @r2l[8]
+c8r.r = @r2r[3]
+c8r.n = @r2n[8]
+c8r.at = @r2at[0]
+c8r.ff = @r2ff[0]
+c8r.o21 = @r2o21[0]
+#########################################################10
+c9r = Attraction_c.new()
+c9r.p = @r2p[0]
+c9r.l = @r2l[9]
+c9r.r = @r2r[2]
+c9r.n = @r2n[9]
+c9r.at = @r2at[0]
+c9r.ff = @r2ff[0]
+c9r.o21 = @r2o21[0]
+#########################################################11
+c10r = Attraction_c.new()
+c10r.p = @r2p[0]
+c10r.l = @r2l[10]
+c10r.r = @r2r[3]
+c10r.n = @r2n[10]
+c10r.at = @r2at[0]
+c10r.ff = @r2ff[0]
+c10r.o21 = @r2o21[0]
+#########################################################HIKING CLASS
+class Attraction_h 
+  attr_accessor :p, :l, :r, :n, :at, :ff, :o21
+end
+#########################################################
+@r3p = ['$']
+@r3l = ['620 Main Street, Carbondale, CO','1-70 East of, Glenwood Springs, CO 81601','Alberta Falls, Estes Park, CO 80517','Rocky Mountain National Park','4751 Roxborough Dr, Littleton, CO 80125','First and Second Flatirons','S Rampart Range Rd, Sedalia, CO 80135','Vanjirs Stead Waypoint','Rocky Mountain National Park','115 North 2nd Ave']
+@r3r = ['1 Stars','4 Stars','5 Stars']
+@r3n = ['Maroon Bells Hikes','Hanging Lake Hike','Alberta Falls Hike at Rocky Mountain National Park','Fern Falls Hike in Rocky Mountain National Park','Fountain Valley Trail at Roxborough State Park','First and Second Flatirons Hike in Boulder','Devil’s Head Fire Lookout Hike','Timberline Falls Hike in Rocky Mountain National Park','Four Lakes and Waterfall Loop Hike in Rocky Mountain National Park','Monarch Lake Loop Hike']
+@r3at = ['Hiking']
+@r3ff = ['Yes']
+@r3o21 = ['No']
+#########################################################1
+d0r = Attraction_h.new() #FIRST HIKING CLASS
+d0r.p = @r3p[0]
+d0r.l = @r3l[0]
+d0r.r = @r3r[2]########################################################################
+d0r.n = @r3n[0]
+d0r.at = @r3at[0]
+d0r.ff = @r3ff[0]
+d0r.o21 = @r3o21[0]
+#########################################################2
+d1r = Attraction_h.new()
+d1r.p = @r3p[0]
+d1r.l = @r3l[1]
+d1r.r = @r3r[1]
+d1r.n = @r3n[1]
+d1r.at = @r3at[0]
+d1r.ff = @r3ff[0]
+d1r.o21 = @r3o21[0]
+#########################################################3
+d2r = Attraction_h.new()
+d2r.p = @r3p[0]
+d2r.l = @r3l[2]
+d2r.r = @r3r[2]
+d2r.n = @r3n[2]
+d2r.at = @r3at[0]
+d2r.ff = @r3ff[0]
+d2r.o21 = @r3o21[0]
+#########################################################4
+d3r = Attraction_h.new()
+d3r.p = @r3p[0]
+d3r.l = @r3l[3]
+d3r.r = @r3r[1]
+d3r.n = @r3n[3]
+d3r.at = @r3at[0]
+d3r.ff = @r3ff[0]
+d3r.o21 = @r3o21[0]
+#########################################################5
+d4r = Attraction_h.new()
+d4r.p = @r3p[0]
+d4r.l = @r3l[4]
+d4r.r = @r3r[2]
+d4r.n = @r3n[4]
+d4r.at = @r3at[0]
+d4r.ff = @r3ff[0]
+d4r.o21 = @r3o21[0]
+#########################################################6
+d5r = Attraction_h.new()
+d5r.p = @r3p[0]
+d5r.l = @r3l[5]
+d5r.r = @r3r[2]
+d5r.n = @r3n[5]
+d5r.at = @r3at[0]
+d5r.ff = @r3ff[0]
+d5r.o21 = @r3o21[0]
+#########################################################7
+d6r = Attraction_h.new()
+d6r.p = @r3p[0]
+d6r.l = @r3l[6]
+d6r.r = @r3r[1]
+d6r.n = @r3n[6]
+d6r.at = @r3at[0]
+d6r.ff = @r3ff[0]
+d6r.o21 = @r3o21[0]
+#########################################################8
+d7r = Attraction_h.new()
+d7r.p = @r3p[0]
+d7r.l = @r3l[7]
+d7r.r = @r3r[2]
+d7r.n = @r3n[7]
+d7r.at = @r3at[0]
+d7r.ff = @r3ff[0]
+d7r.o21 = @r3o21[0]
+#########################################################9
+d8r = Attraction_h.new()
+d8r.p = @r3p[0]
+d8r.l = @r3l[8]
+d8r.r = @r3r[2]
+d8r.n = @r3n[8]
+d8r.at = @r3at[0]
+d8r.ff = @r3ff[0]
+d8r.o21 = @r3o21[0]
+#########################################################10
+d9r = Attraction_h.new()
+d9r.p = @r3p[0]
+d9r.l = @r3l[9]
+d9r.r = @r3r[1]
+d9r.n = @r3n[9]
+d9r.at = @r3at[0]
+d9r.ff = @r3ff[0]
+d9r.o21 = @r3o21[0]
+#########################################################SKIING
+class Attraction_s
+  attr_accessor :p, :l, :r, :n, :at, :ff, :o21
+end
+#########################################################
+@r4p = ['$$$']
+@r4l = ['565 Mountain Village Blvd, Telluride, CO 81435','Vail, CO 81657','120 Lower, Carriage Way, Snowmass Village, CO 81615','2305 Mt. Werner Circle
+Steamboat Springs, CO 80487 ','85 Parsenn Rd, Winter Park, CO 80482','210 Beaver Creek Plaza, Beaver Creek, CO 81620','199 Prospector Rd, Aspen, CO 81611','601 E Dean St, Aspen, CO 81611','1599 Ski Hill Rd, Breckenridge, CO 80424','12 Snowmass Rd, Crested Butte, CO 81225','28194 US-6, Dillon, CO 80435','209 Ten Mile Cir, Frisco, CO 80443','I-70, Dillon, CO 80435']
+@r4r = ['4 Stars', '5 Stars']
+@r4n = ['Telluride Ski Resort','Vail Ski Resort','Aspen Snowmas','Steamboat Ski Resort','Winter Part Ski Resort','Beaver Creek Resort','Aspen Highlands','Aspen Mountain-Ajax','Breckenridge Ski Resort','Crested Butte Ski Resort','Arapahoe Basin Ski Area','Copper Mountain','Loveland Ski Area']
+@r4at = ['Skiing']
+@r4ff = ['Yes']
+@r4o21 = ['No']
+########################################################### CREATING FIRST SKIING ITERATION
+e0r = Attraction_s.new()
+e0r.p = @r4p[0]
+e0r.l = @r4l[0]
+e0r.r = @r4r[1]
+e0r.n = @r4n[0]
+e0r.at =  @r4at[0]
+e0r.ff =  @r4ff[0]
+e0r.o21 = @r4o21[0]
+########################################################
+e1r = Attraction_s.new()
+e1r.p = @r4p[0]
+e1r.l = @r4l[1]
+e1r.r = @r4r[1]
+e1r.n = @r4n[1]
+e1r.at =  @r4at[0]
+e1r.ff =  @r4ff[0]
+e1r.o21 = @r4o21[0]
+########################################################
+e2r = Attraction_s.new()
+e2r.p = @r4p[0]
+e2r.l = @r4l[2]
+e2r.r = @r4r[1]
+e2r.n = @r4n[2]
+e2r.at =  @r4at[0]
+e2r.ff =  @r4ff[0]
+e2r.o21 = @r4o21[0]
+########################################################
+e3r = Attraction_s.new()
+e3r.p = @r4p[0]
+e3r.l = @r4l[3]
+e3r.r = @r4r[1]
+e3r.n = @r4n[3]
+e3r.at =  @r4at[0]
+e3r.ff =  @r4ff[0]
+e3r.o21 = @r4o21[0]
+########################################################
+e4r = Attraction_s.new()
+e4r.p = @r4p[0]
+e4r.l = @r4l[4]
+e4r.r = @r4r[0]
+e4r.n = @r4n[4]
+e4r.at =  @r4at[0]
+e4r.ff =  @r4ff[0]
+e4r.o21 = @r4o21[0]
+########################################################
+e5r = Attraction_s.new()
+e5r.p = @r4p[0]
+e5r.l = @r4l[5]
+e5r.r = @r4r[1]
+e5r.n = @r4n[5]
+e5r.at =  @r4at[0]
+e5r.ff =  @r4ff[0]
+e5r.o21 = @r4o21[0]
+########################################################
+e6r = Attraction_s.new()
+e6r.p = @r4p[0]
+e6r.l = @r4l[6]
+e6r.r = @r4r[1]
+e6r.n = @r4n[6]
+e6r.at =  @r4at[0]
+e6r.ff =  @r4ff[0]
+e6r.o21 = @r4o21[0]
+########################################################
+e7r = Attraction_s.new()
+e7r.p = @r4p[0]
+e7r.l = @r4l[7]
+e7r.r = @r4r[0]
+e7r.n = @r4n[7]
+e7r.at =  @r4at[0]
+e7r.ff =  @r4ff[0]
+e7r.o21 = @r4o21[0]
+########################################################
+e8r = Attraction_s.new()
+e8r.p = @r4p[0]
+e8r.l = @r4l[8]
+e8r.r = @r4r[0]
+e8r.n = @r4n[8]
+e8r.at =  @r4at[0]
+e8r.ff =  @r4ff[0]
+e8r.o21 = @r4o21[0]
+########################################################
+e9r = Attraction_s.new()
+e9r.p = @r4p[0]
+e9r.l = @r4l[9]
+e9r.r = @r4r[1]
+e9r.n = @r4n[9]
+e9r.at =  @r4at[0]
+e9r.ff =  @r4ff[0]
+e9r.o21 = @r4o21[0]
+########################################################
+e10r = Attraction_s.new()
+e10r.p = @r4p[0]
+e10r.l = @r4l[10]
+e10r.r = @r4r[1]
+e10r.n = @r4n[10]
+e10r.at =  @r4at[0]
+e10r.ff =  @r4ff[0]
+e10r.o21 = @r4o21[0]
+########################################################
+e11r = Attraction_s.new()
+e11r.p = @r4p[0]
+e11r.l = @r4l[11]
+e11r.r = @r4r[0]
+e11r.n = @r4n[11]
+e11r.at =  @r4at[0]
+e11r.ff =  @r4ff[0]
+e11r.o21 = @r4o21[0]
+########################################################
+e12r = Attraction_s.new()
+e12r.p = @r4p[0]
+e12r.l = @r4l[12]
+e12r.r = @r4r[0]
+e12r.n = @r4n[12]
+e12r.at =  @r4at[0]
+e12r.ff =  @r4ff[0]
+e12r.o21 = @r4o21[0]
+######################################################## INITIALIZE// ALLOWS US TO CREATE TEXT WITH NO BARRIER NEEDED// ALLOWS US TO GET TEXT FROM USER WITH NO BARRIER
+x = 0
+case
+when x = 0
+puts 'What would you like to search for? '
+puts '[Note, when searching please use abreviations such as OY for Outdoors[Yes], or ATR when searching for restraunts]'
+puts "Here's some catagories: Price: [High, Low], Outdoors: [Y/N], Family Friendly [Y/N], Ratings[High, Low], Attraction Type[Restraunts, Museums, Climbing, Hiking, Skiing] "
+puts 'type here: ' 
+action = gets.chomp #GET TEXT FROM USER
+puts '-------------------------------------------'
+end
+if action == 'FFN' #IF NOT FAMILY FRIENDLY, RESET AND ASK SAME QUESTION
+  puts 'Unfortunately there is no non-family friendly activities, however all forms of entertainment can be found throughout all of them!'
+  puts '-------------------------------------------'
+  x = 0
+  case
+  when x = 0
+    puts 'What would you like to search for? '
+    puts '[Note, when searching please use abreviations such as OY for Outdoors[Yes], or ATR when searching for restraunts]'
+    puts "Here's some catagories: Price: [High, Low], Outdoors: [Y/N], Family Friendly [Y/N], Ratings[High, Low], Attraction Type[Restraunts, Museums, Climbing, Hiking, Skiing] "
+    puts 'type here: '
+    
+    action = gets.chomp
+    puts '-------------------------------------------'
+  end
+  end
+if action == 'ATR' #PUTS US AT RESTRAUNT MAIN // X VALUES ARE FOR DIFFERENTIATING BETWEEN DIFFERENT AT'S
+  puts @r_name
+  x += 1
+elsif action == 'ATM'#MUSEUM MAIN
+  puts @r1n
+  x += 5
+elsif action == 'ATC' #CLIMBING MAIN
+  puts @r2n
+  x += 4
+elsif action == 'ATH' #HIKING MAIN
+  puts @r3n
+  x += 3
+elsif action == 'ATS' #SKIING MAIN
+  puts @r4n
+  x += 6
+########################################################################################OUTDOORS CONDITONALS  
+elsif action == 'OY' #IF USER TYPES OY, SAY THIS
+  puts 'Hiking, Climbing, and Skiing are outdoors, which would you like to search for?'
+  puts '-------------------------------------------------------------------------'
+  action = gets.chomp
+  puts '-------------------------------------------------------------------------'
+  if action == 'Hiking' || action == 'hiking' #IF USER TYPES THESE, DO THIS
+    x += 3
+    puts @r3n
+  elsif action == 'climbing' || action == 'Climbing'
+    x += 4
+    puts @r2n
+  elsif action == 'Skiing' || action == 'skiing'
+    x += 6
+    puts @r4n
+  end
+########################################################################################NON-OUTDOORS CONDITIONALS
+elsif action == 'ON' #IF USER TYPES ON, DO THIS
+  puts 'Both Restraunts and Museums are indoors, which would you like to search for?'
+  puts '-------------------------------------------------------------------------'
+  action = gets.chomp
+  puts '-------------------------------------------------------------------------'
+  if action == 'restraunts' || action == 'Restraunts'
+    x += 1
+    puts @r_name
+  elsif action == 'museums' || action == 'Museums'
+    x += 5
+    puts @r1n
+  end
+##########################################################################HIGH RATINGS CONDITIONALS  
+elsif action == 'RH' #ELSIF COMMANDS ALLOWS MASTER TO NOT HAVE TO CREATE NEW WHEN STATEMENTS, ALL UNDER 1 UMBRELLA SO EFFICIENCY IS MAXIMIZED DESPITE IF STATEMENTS
+  puts "Almost all things on the list of attractions have a high rating, so please chose an Attraction Type and we'll sort the rest out for you! "
+  puts '-------------------------------------------------------------------------'
+  action = gets.chomp
+  puts '-------------------------------------------------------------------------'
+##############################################################################################################RESTRAUNT CONDITIONALS DONE  
+  if action == 'ATR'
+    puts "Here's a list of restraunts that all have high ratings!" 
+    puts '-------------------------------------------------------------------------'
+    puts a1r.n, a2r.n, a3r.n, a4r.n, a6r.n
+    puts '-------------------------------------------------------------------------'
+  puts 'what restraunt would you like to see?'
+  puts '-----------------------------------------'
+  action = gets.chomp
+  puts '-----------------------------------------'#SAYS RESTRAUNT STUFF
+  if action == a1r.n
+    puts  'Restraunt type is ' + a1r.ft, 'Price is ' + a1r.p, 'location is ' + a1r.l, 'Ratings for this location: ' + a1r.r,  'Is ' + a1r.n + ' family friendly? ' + a1r.f_f, 'Is ' + a1r.n + ' 21 and over only? ' + a1r.o_21
+  elsif action == a2r.n
+    puts  'Restraunt type is ' + a2r.ft, 'Price is ' + a2r.p, 'location is ' + a2r.l, 'Ratings for this location: ' + a2r.r,  'Is ' + a2r.n + ' family friendly? ' + a2r.f_f, 'Is ' + a2r.n + ' 21 and over only? ' + a2r.o_21
+  elsif action == a3r.n
+      puts  'Restraunt type is ' + a3r.ft, 'Price is ' + a3r.p, 'location is ' + a3r.l, 'Ratings for this location: ' + a3r.r,  'Is ' + a3r.n + ' family friendly? ' + a3r.f_f, 'Is ' + a3r.n + ' 21 and over only? ' + a3r.o_21
+    elsif action == a4r.n
+        puts  'Restraunt type is ' + a4r.ft, 'Price is ' + a4r.p, 'location is ' + a4r.l, 'Ratings for this location: ' + a4r.r,  'Is ' + a4r.n + ' family friendly? ' + a4r.f_f, 'Is ' + a4r.n + ' 21 and over only? ' + a4r.o_21
+        elsif action == a6r.n
+          puts 'Restraunt type is ' + a6r.ft, 'Price is ' + a6r.p, 'location is ' + a6r.l, 'Ratings for this location: ' + a6r.r,  'Is ' + a6r.n + ' family friendly? ' + a6r.f_f, 'Is ' + a6r.n + ' 21 and over only? ' + a6r.o_21
+  end
+##############################################################################################################MUSEUM CONDITIONALS DONE    
+  elsif action == 'ATM'
+    puts "Here's a list of museums that all have high ratings!"
+    puts '-------------------------------------------------------------------------'
+    puts b2r.n, b3r.n, b4r.n, b5r.n, b6r.n, b7r.n, b8r.n, b9r.n #REFER TO TEXT ABOVE "LIST OF MUSEUMS"
+    puts '-------------------------------------------------------------------------'
+    puts 'Please chose a museum to research!'
+  action = gets.chomp
+  puts '---------------------------------------'
+################################################### JUST SPACED OUT STUFF, SAME AS RESTRAUNT
+  if action == b2r.n
+
+    puts  'Price of museum is ' + b2r.p, 'Location of museum is ' + b2r.l, 'Is ' + b2r.n + ' family friendly? ' + b2r.ff, 'Is ' + b2r.n + ' 21 and over only? ' + b2r.o21
+#####################################################################################    
+  elsif action == b3r.n
+ 
+    puts  'Price of museum is ' + b3r.p, 'Location of museum is ' + b3r.l, 'Is ' + b3r.n + ' family friendly? ' + b3r.ff, 'Is ' + b3r.n + ' 21 and over only? ' + b3r.o21
+####################################################
+  elsif action == b4r.n
+
+    puts  'Price of museum is ' + b4r.p, 'Location of museum is ' + b4r.l, 'Is ' + b4r.n + ' family friendly? ' + b4r.ff, 'Is ' + b4r.n + ' 21 and over only? ' + b4r.o21
+  ####################################################
+  elsif action == b5r.n
+
+    puts  'Price of museum is ' + b5r.p, 'Location of museum is ' + b5r.l, 'Is ' + b5r.n + ' family friendly? ' + b5r.ff, 'Is ' + b5r.n + ' 21 and over only? ' + b5r.o21
+   ####################################################
+  elsif action == b6r.n
+
+    puts  'Price of museum is ' + b6r.p, 'Location of museum is ' + b6r.l, 'Is ' + b6r.n + ' family friendly? ' + b6r.ff, 'Is ' + b6r.n + ' 21 and over only? ' + b6r.o21
+   ####################################################
+  elsif action == b7r.n
+
+    puts  'Price of museum is ' + b7r.p, 'Location of museum is ' + b7r.l, 'Is ' + b7r.n + ' family friendly? ' + b7r.ff, 'Is ' + b7r.n + ' 21 and over only? ' + b7r.o21
+   ####################################################
+  elsif action == b8r.n
+
+    puts  'Price of museum is ' + b8r.p, 'Location of museum is ' + b8r.l, 'Is ' + b8r.n + ' family friendly? ' + b8r.ff, 'Is ' + b8r.n + ' 21 and over only? ' + b8r.o21
+   ####################################################
+  elsif action == b9r.n
+ 
+    puts  'Price of museum is ' + b9r.p, 'Location of museum is ' + b9r.l, 'Is ' + b9r.n + ' family friendly? ' + b9r.ff, 'Is ' + b9r.n + ' 21 and over only? ' + b9r.o21
+   ####################################################
+  end
+
+    
+###########################################################################################CLIMBING CONDITIONALS DONE    
+  elsif action == 'ATC'
+    puts "Here's a list of climbs that all have high ratings!"
+    puts '-------------------------------------------------------------------------'
+    puts c0r.n, c1r.n, c2r.n, c3r.n, c4r.n, c5r.n, c6r.n, c8r.n, c10r.n
+    puts '-------------------------------------------------------------------------'
+    puts 'what climbing would you like to explore? '
+    puts '-----------------------------------'
+    action = gets.chomp
+    puts '---------------------------------------'
+    ###################################################  
+    if action == c0r.n
+
+      puts  'Price of climbing in this area is: ' + c0r.p, 'Location is: ' + c0r.l, 'Is ' + c0r.n + ' family friendly? ' + c0r.ff, 'Is ' + c0r.n + ' 21 and over only? ' + c0r.o21
+    #####################################################################################
+    elsif action == c1r.n
+
+      puts  'Price of climbing in this area is: ' + c1r.p, 'Location is: ' + c1r.l, 'Is ' + c1r.n + ' family friendly? ' + c1r.ff, 'Is ' + c1r.n + ' 21 and over only? ' + c1r.o21
+    #####################################################################################
+    elsif action == c2r.n
+
+      puts  'Price of climbing in this area is: ' + c2r.p, 'Location is: ' + c2r.l, 'Is ' + c2r.n + ' family friendly? ' + c2r.ff, 'Is ' + c2r.n + ' 21 and over only? ' + c2r.o21
+    #####################################################################################
+    elsif action == c3r.n
+
+      puts  'Price of climbing in this area is: ' + c3r.p, 'Location is: ' + c3r.l, 'Is ' + c3r.n + ' family friendly? ' + c3r.ff, 'Is ' + c3r.n + ' 21 and over only? ' + c3r.o21
+    #####################################################################################
+    elsif action == c4r.n
+
+      puts  'Price of climbing in this area is: ' + c4r.p, 'Location is: ' + c4r.l, 'Is ' + c4r.n + ' family friendly? ' + c4r.ff, 'Is ' + c4r.n + ' 21 and over only? ' + c4r.o21
+    #####################################################################################
+    elsif action == c5r.n
+      sleep 1 
+      puts  'Price of climbing in this area is: ' + c5r.p, 'Location is: ' + c5r.l, 'Is ' + c5r.n + ' family friendly? ' + c5r.ff, 'Is ' + c5r.n + ' 21 and over only? ' + c5r.o21
+    #####################################################################################
+    elsif action == c6r.n
+
+      puts  'Price of climbing in this area is: ' + c6r.p, 'Location is: ' + c6r.l, 'Is ' + c6r.n + ' family friendly? ' + c6r.ff, 'Is ' + c6r.n + ' 21 and over only? ' + c6r.o21
+    #####################################################################################
+    elsif action == c8r.n
+
+      puts  'Price of climbing in this area is: ' + c8r.p, 'Location is: ' + c8r.l, 'Is ' + c8r.n + ' family friendly? ' + c8r.ff, 'Is ' + c8r.n + ' 21 and over only? ' + c8r.o21
+    #####################################################################################
+    elsif action == c10r.n
+
+      puts  'Price of climbing in this area is: ' + c10r.p, 'Location is: ' + c10r.l, 'Is ' + c10r.n + ' family friendly? ' + c10r.ff, 'Is ' + c10r.n + ' 21 and over only? ' + c10r.o21
+    #####################################################################################
+    end
+#########################################################################################################    
+  elsif action == 'ATH'
+    puts "Here's a list of hikes that all have high ratings!"
+    puts '-------------------------------------------------------------------------'
+    puts @r3n
+    puts '-------------------------------------------------------------------------'
+    x += 3
+###########################################################################################################HIKING CONDITONALS DONE    
+  elsif action == 'ATS'
+    puts "Here's a list of skiing resorts that all have high ratings!"
+    puts '-------------------------------------------------------------------------'
+    puts @r4n #BRINGS TO MAIN SKIING STUFF
+    puts '-------------------------------------------------------------------------'
+    x += 6
+  end
+###############################################################################SKIING CONDITONALS DONE
+
+
+
+
+  
+############################################################################LOW RATINGS CONDITIONALS DONE
+elsif action == 'RL'
+  puts "Only a 5 locations have ratings of 3 stars or lower, so we'll show them all to you and label which attraction it belongs to!"
+  puts '---------------------------------------------------------'
+  puts 'These location belong to Climbing'
+  puts c7r.n, c9r.n
+  puts '---------------------------------------------------------'
+  puts '---------------------------------------------------------'
+  puts 'These location belong to Museums'
+  puts bxr.n, bzr.n
+  puts '---------------------------------------------------------'
+  puts '---------------------------------------------------------'
+  puts 'This location belongs to Restraunts'
+  puts a5r.n
+  puts '---------------------------------------------------------'
+  puts 'Please type which location you would like to search: '
+  action = gets.chomp
+  puts '---------------------------------------------------------'
+  if action == a5r.n
+    puts  'Restraunt type is ' + a5r.ft, 'Price is ' + a5r.p, 'location is ' + a5r.l, 'Ratings for this location: ' + a5r.r,  'Is ' + a5r.n + ' family friendly? ' + a5r.f_f, 'Is ' + a5r.n + ' 21 and over only? ' + a5r.o_21
+  elsif action == bzr.n
+     puts  'Price of museum is ' + bzr.p, 'Location of museum is ' + bzr.l, 'Is ' + bzr.n + ' family friendly? ' + bzr.ff, 'Is ' + bzr.n + ' 21 and over only? ' + bzr.o21
+  elsif action == bxr.n
+     puts  'Price of museum is ' + bxr.p, 'Location of museum is ' + bxr.l, 'Is ' + bxr.n + ' family friendly? ' + bxr.ff, 'Is ' + bxr.n + ' 21 and over only? ' + bxr.o21
+  elsif action == c7r.n
+    puts  'Price of climbing in this area is: ' + c7r.p, 'Location is: ' + c7r.l, 'Is ' + c7r.n + ' family friendly? ' + c7r.ff, 'Is ' + c7r.n + ' 21 and over only? ' + c7r.o21
+  elsif action == c9r.n
+    puts  'Price of climbing in this area is: ' + c9r.p, 'Location is: ' + c9r.l, 'Is ' + c9r.n + ' family friendly? ' + c9r.ff, 'Is ' + c9r.n + ' 21 and over only? ' + c9r.o21
+  end
+############################################################################FAMILY FRIENDLY CONDITIONALS
+elsif action == 'FFY'
+puts 'Luckily, all attractions on the list are family friendly, so search for whatever sounds the most fun by using AT(input)!'
+action = gets.chomp
+if action == 'ATR'
+  puts @r_name
+  x += 1
+elsif action == 'ATM'
+  puts @r1n
+  x += 5
+elsif action == 'ATC'
+  puts @r2n
+  x += 4
+elsif action == 'ATH'
+  puts @r3n
+  x += 3
+elsif action == 'ATS'
+  puts @r4n
+  x += 6
+end
+
+
+
+
+  
+################################################################################# NON-FAMILY FRIENDLY CONDITONALS
+
+
+
+
+  
+  ######################################PRICE HIGH CONDITIONALS
+elsif action == 'PH'
+  puts 'There is a wide selection of Skiing in the area that is higher in price, as well as one restraunt. Which would you like to select?'
+  puts '---------------------------------------------------'
+  action = gets.chomp
+  puts '---------------------------------------------------'
+  if action == 'skiing' || action == 'Skiing'
+    puts '---------------------------------------------------'
+    puts @r4n
+    puts '---------------------------------------------------'
+    puts 'What skiing resort are you interested in searching?'
+    puts '----------------------------------------------------'
+    action = gets.chomp
+    puts '---------------------------------------------------'
+      if action == e0r.n
+
+    puts  'Price of Skiing in this area is: ' + e0r.p, 'Location is: ' + e0r.l, 'Is ' + e0r.n + ' family friendly? ' + e0r.ff, 'Is ' + e0r.n + ' 21 and over only? ' + e0r.o21
+    #####################################################################################
+    elsif action == e1r.n
+    
+    puts  'Price of Skiing in this area is: ' + e1r.p, 'Location is: ' + e1r.l, 'Is ' + e1r.n + ' family friendly? ' + e1r.ff, 'Is ' + e1r.n + ' 21 and over only? ' + e1r.o21
+    #####################################################################################
+        elsif action == e2r.n
+   
+    puts  'Price of Skiing in this area is: ' + e2r.p, 'Location is: ' + e2r.l, 'Is ' + e2r.n + ' family friendly? ' + e2r.ff, 'Is ' + e2r.n + ' 21 and over only? ' + e2r.o21
+    #####################################################################################
+        elsif action == e3r.n
+    
+    puts  'Price of Skiing in this area is: ' + e3r.p, 'Location is: ' + e3r.l, 'Is ' + e3r.n + ' family friendly? ' + e3r.ff, 'Is ' + e3r.n + ' 21 and over only? ' + e3r.o21
+    #####################################################################################
+        elsif action == e4r.n
+ 
+    puts  'Price of Skiing in this area is: ' + e4r.p, 'Location is: ' + e4r.l, 'Is ' + e4r.n + ' family friendly? ' + e4r.ff, 'Is ' + e4r.n + ' 21 and over only? ' + e4r.o21
+    #####################################################################################
+        elsif action == e5r.n
+
+    puts  'Price of Skiing in this area is: ' + e5r.p, 'Location is: ' + e5r.l, 'Is ' + e5r.n + ' family friendly? ' + e5r.ff, 'Is ' + e5r.n + ' 21 and over only? ' + e5r.o21
+    #####################################################################################
+        elsif action == e6r.n
+   
+    puts  'Price of Skiing in this area is: ' + e6r.p, 'Location is: ' + e6r.l, 'Is ' + e6r.n + ' family friendly? ' + e6r.ff, 'Is ' + e6r.n + ' 21 and over only? ' + e6r.o21
+    #####################################################################################
+        elsif action == e7r.n
+   
+    puts  'Price of Skiing in this area is: ' + e7r.p, 'Location is: ' + e7r.l, 'Is ' + e7r.n + ' family friendly? ' + e7r.ff, 'Is ' + e7r.n + ' 21 and over only? ' + e7r.o21
+    #####################################################################################
+        elsif action == e8r.n
+
+    puts  'Price of Skiing in this area is: ' + e8r.p, 'Location is: ' + e8r.l, 'Is ' + e8r.n + ' family friendly? ' + e8r.ff, 'Is ' + e8r.n + ' 21 and over only? ' + e8r.o21
+    #####################################################################################
+        elsif action == e9r.n
+ 
+    puts  'Price of Skiing in this area is: ' + e9r.p, 'Location is: ' + e9r.l, 'Is ' + e9r.n + ' family friendly? ' + e9r.ff, 'Is ' + e9r.n + ' 21 and over only? ' + e9r.o21
+    #####################################################################################
+        elsif action == e10r.n
+   
+    puts  'Price of Skiing in this area is: ' + e10r.p, 'Location is: ' + e10r.l, 'Is ' + e10r.n + ' family friendly? ' + e10r.ff, 'Is ' + e10r.n + ' 21 and over only? ' + e10r.o21
+    #####################################################################################
+        elsif action == e11r.n
+  
+    puts  'Price of Skiing in this area is: ' + e11r.p, 'Location is: ' + e11r.l, 'Is ' + e11r.n + ' family friendly? ' + e11r.ff, 'Is ' + e11r.n + ' 21 and over only? ' + e11r.o21
+    #####################################################################################
+        elsif action == e12r.n
+   
+    puts  'Price of Skiing in this area is: ' + e12r.p, 'Location is: ' + e12r.l, 'Is ' + e12r.n + ' family friendly? ' + e12r.ff, 'Is ' + e12r.n + ' 21 and over only? ' + e12r.o21
+    #####################################################################################
+      end
+  elsif action == 'Restraunt' || action == 'restraunt'
+    puts '---------------------------------------------------'
+    puts 'Name of restraunt is ' + a2r.n, 'Restraunt type is ' + a2r.ft, 'Price is ' + a2r.p, 'location is ' + a2r.l, 'Ratings for this location: ' + a2r.r,  'Is ' + a2r.n + ' family friendly? ' + a2r.f_f, 'Is ' + a2r.n + ' 21 and over only? ' + a2r.o_21
+    puts '---------------------------------------------------'
+  end
+
+##############################################################################################PRICE LOW CONDITIONAL  
+elsif action == 'PL' 
+  puts "Here's come catagories that are of low price: restraunts, museums, climbing, hiking"
+  puts 'please type what catagory you would like to search in' 
+  puts '------------------------------------------------'
+  action = gets.chomp
+  if action == 'restraunt' || action == 'Restraunt' || action == 'Restraunts' || action == 'restraunts'
+    puts "Both " + a1r.n + " and " + a5r.n + " are inexpensive!"
+    puts 'Which would you like to search? '
+    puts '------------------------------------------------'
+    action = gets.chomp
+    if action == a1r.n
+      puts '---------------------------------------------------'
+      puts 'Restraunt type is ' + a1r.ft, 'Price is ' + a1r.p, 'location is ' + a1r.l, 'Ratings for this location: ' + a1r.r,  'Is ' + a1r.n + ' family friendly? ' + a1r.f_f, 'Is ' + a1r.n + ' 21 and over only? ' + a1r.o_21
+    elsif action == a5r.n
+      puts '-------------------------------------------------'
+       puts 'Restraunt type is ' + a5r.ft, 'Price is ' + a5r.p, 'location is ' + a5r.l, 'Ratings for this location: ' + a5r.r,  'Is ' + a5r.n + ' family friendly? ' + a5r.f_f, 'Is ' + a5r.n + ' 21 and over only? ' + a5r.o_21
+    end
+  elsif action == 'Museums' || action == 'museums'
+    puts '---------------------------------------------------'
+    puts 'All museums in the general area are inexpensive!'
+    puts "Here's the list of museums: "
+    puts @r1n
+    puts '-------------------------------------'
+    puts 'what Museum would you like to explore? '
+    puts '-----------------------------------'
+    action = gets.chomp
+    puts '---------------------------------------'
+###################################################  
+  if action == b2r.n
+puts 'Price of museum is ' + b2r.p, 'Location of museum is ' + b2r.l, 'Is ' + b2r.n + ' family friendly? ' + b2r.ff, 'Is ' + b2r.n + ' 21 and over only? ' + b2r.o21
+#####################################################################################    
+  elsif action == b3r.n
+puts 'Price of museum is ' + b3r.p, 'Location of museum is ' + b3r.l, 'Is ' + b3r.n + ' family friendly? ' + b3r.ff, 'Is ' + b3r.n + ' 21 and over only? ' + b3r.o21
+####################################################
+  elsif action == b4r.n
+    puts 'Price of museum is ' + b4r.p, 'Location of museum is ' + b4r.l, 'Is ' + b4r.n + ' family friendly? ' + b4r.ff, 'Is ' + b4r.n + ' 21 and over only? ' + b4r.o21
+  ####################################################
+  elsif action == b5r.n
+    puts 'Price of museum is ' + b5r.p, 'Location of museum is ' + b5r.l, 'Is ' + b5r.n + ' family friendly? ' + b5r.ff, 'Is ' + b5r.n + ' 21 and over only? ' + b5r.o21
+   ####################################################
+  elsif action == b6r.n
+    puts 'Price of museum is ' + b6r.p, 'Location of museum is ' + b6r.l, 'Is ' + b6r.n + ' family friendly? ' + b6r.ff, 'Is ' + b6r.n + ' 21 and over only? ' + b6r.o21
+   ####################################################
+  elsif action == b7r.n
+    puts 'Price of museum is ' + b7r.p, 'Location of museum is ' + b7r.l, 'Is ' + b7r.n + ' family friendly? ' + b7r.ff, 'Is ' + b7r.n + ' 21 and over only? ' + b7r.o21
+   ####################################################
+  elsif action == b8r.n
+    puts 'Price of museum is ' + b8r.p, 'Location of museum is ' + b8r.l, 'Is ' + b8r.n + ' family friendly? ' + b8r.ff, 'Is ' + b8r.n + ' 21 and over only? ' + b8r.o21
+   ####################################################
+  elsif action == b9r.n
+    puts 'Price of museum is ' + b9r.p, 'Location of museum is ' + b9r.l, 'Is ' + b9r.n + ' family friendly? ' + b9r.ff, 'Is ' + b9r.n + ' 21 and over only? ' + b9r.o21
+   ####################################################
+  elsif action == bzr.n
+    puts  'Price of museum is ' + bzr.p, 'Location of museum is ' + bzr.l, 'Is ' + bzr.n + ' family friendly? ' + bzr.ff, 'Is ' + bzr.n + ' 21 and over only? ' + bzr.o21
+   ####################################################
+  elsif action == bxr.n
+    puts  'Price of museum is ' + bxr.p, 'Location of museum is ' + bxr.l, 'Is ' + bxr.n + ' family friendly? ' + bxr.ff, 'Is ' + bxr.n + ' 21 and over only? ' + bxr.o21
+  end
+  elsif action == 'climbing' || action == 'climbing'
+    puts '---------------------------------'
+    puts 'All climbing in the general area is inexpensive!'
+    puts "Here's a list of the climbing avaliable: "
+    puts @r2n
+    puts '-------------------------------------'
+    puts 'what climbing would you like to explore? '
+    puts '-----------------------------------'
+    action = gets.chomp
+    puts '---------------------------------------'
+    ###################################################  
+    if action == c0r.n
+
+      puts  'Price of climbing in this area is: ' + c0r.p, 'Location is: ' + c0r.l, 'Is ' + c0r.n + ' family friendly? ' + c0r.ff, 'Is ' + c0r.n + ' 21 and over only? ' + c0r.o21
+    #####################################################################################
+    elsif action == c1r.n
+
+      puts  'Price of climbing in this area is: ' + c1r.p, 'Location is: ' + c1r.l, 'Is ' + c1r.n + ' family friendly? ' + c1r.ff, 'Is ' + c1r.n + ' 21 and over only? ' + c1r.o21
+    #####################################################################################
+    elsif action == c2r.n
+
+      puts  'Price of climbing in this area is: ' + c2r.p, 'Location is: ' + c2r.l, 'Is ' + c2r.n + ' family friendly? ' + c2r.ff, 'Is ' + c2r.n + ' 21 and over only? ' + c2r.o21
+    #####################################################################################
+    elsif action == c3r.n
+
+      puts  'Price of climbing in this area is: ' + c3r.p, 'Location is: ' + c3r.l, 'Is ' + c3r.n + ' family friendly? ' + c3r.ff, 'Is ' + c3r.n + ' 21 and over only? ' + c3r.o21
+    #####################################################################################
+    elsif action == c4r.n
+
+      puts  'Price of climbing in this area is: ' + c4r.p, 'Location is: ' + c4r.l, 'Is ' + c4r.n + ' family friendly? ' + c4r.ff, 'Is ' + c4r.n + ' 21 and over only? ' + c4r.o21
+    #####################################################################################
+    elsif action == c5r.n
+      sleep 1 
+      puts  'Price of climbing in this area is: ' + c5r.p, 'Location is: ' + c5r.l, 'Is ' + c5r.n + ' family friendly? ' + c5r.ff, 'Is ' + c5r.n + ' 21 and over only? ' + c5r.o21
+    #####################################################################################
+    elsif action == c6r.n
+
+      puts  'Price of climbing in this area is: ' + c6r.p, 'Location is: ' + c6r.l, 'Is ' + c6r.n + ' family friendly? ' + c6r.ff, 'Is ' + c6r.n + ' 21 and over only? ' + c6r.o21
+    #####################################################################################
+    elsif action == c7r.n
+
+      puts  'Price of climbing in this area is: ' + c7r.p, 'Location is: ' + c7r.l, 'Is ' + c7r.n + ' family friendly? ' + c7r.ff, 'Is ' + c7r.n + ' 21 and over only? ' + c7r.o21
+    #####################################################################################
+    elsif action == c8r.n
+
+      puts  'Price of climbing in this area is: ' + c8r.p, 'Location is: ' + c8r.l, 'Is ' + c8r.n + ' family friendly? ' + c8r.ff, 'Is ' + c8r.n + ' 21 and over only? ' + c8r.o21
+    #####################################################################################
+    elsif action == c9r.n
+
+      puts  'Price of climbing in this area is: ' + c9r.p, 'Location is: ' + c9r.l, 'Is ' + c9r.n + ' family friendly? ' + c9r.ff, 'Is ' + c9r.n + ' 21 and over only? ' + c9r.o21
+    #####################################################################################
+    elsif action == c10r.n
+
+      puts  'Price of climbing in this area is: ' + c10r.p, 'Location is: ' + c10r.l, 'Is ' + c10r.n + ' family friendly? ' + c10r.ff, 'Is ' + c10r.n + ' 21 and over only? ' + c10r.o21
+    #####################################################################################
+  end
+  elsif action == 'hiking' || action == 'Hiking'
+    puts '---------------------------------'
+    puts 'All hiking in the general area is inexpensive!'
+    puts "Here's a list of the hiking avaliable: "
+    puts @r3n
+    puts '---------------------------------------'
+    puts 'what hiking would you like to explore? '
+    puts '-----------------------------------'
+    action = gets.chomp
+    puts '---------------------------------------'
+    if action == d0r.n
+    puts  'Price of hiking trail is ' + d0r.p, 'Location of hiking trail is ' + d0r.l, 'Is ' + d0r.n + ' family friendly? ' + d0r.ff, 'Is ' + d0r.n + ' 21 and over only? ' + d0r.o21
+    ########################
+    elsif action == d1r.n
+    puts  'Price of hiking trail is ' + d1r.p, 'Location of hiking trail is ' + d1r.l, 'Is ' + d1r.n + ' family friendly? ' + d1r.ff, 'Is ' + d1r.n + ' 21 and over only? ' + d1r.o21
+    #########################
+    elsif action == d2r.n
+    puts  'Price of hiking trail is ' + d2r.p, 'Location of hiking trail is ' + d2r.l, 'Is ' + d2r.n + ' family friendly? ' + d2r.ff, 'Is ' + d2r.n + ' 21 and over only? ' + d2r.o21
+    #############################
+    elsif action == d3r.n
+    puts  'Price of hiking trail is ' + d3r.p, 'Location of hiking trail is ' + d3r.l, 'Is ' + d3r.n + ' family friendly? ' + d3r.ff, 'Is ' + d3r.n + ' 21 and over only? ' + d3r.o21
+    ############################################
+    elsif action == d4r.n
+    puts  'Price of hiking trail is ' + d4r.p, 'Location of hiking trail is ' + d4r.l, 'Is ' + d4r.n + ' family friendly? ' + d4r.ff, 'Is ' + d4r.n + ' 21 and over only? ' + d4r.o21
+    ##################################
+    elsif action == d5r.n
+    puts  'Price of hiking trail is ' + d5r.p, 'Location of hiking trail is ' + d5r.l, 'Is ' + d5r.n + ' family friendly? ' + d5r.ff, 'Is ' + d5r.n + ' 21 and over only? ' + d5r.o21
+    #####################################
+    elsif action == d6r.n
+    puts  'Price of hiking trail is ' + d6r.p, 'Location of hiking trail is ' + d6r.l, 'Is ' + d6r.n + ' family friendly? ' + d6r.ff, 'Is ' + d6r.n + ' 21 and over only? ' + d6r.o21
+    #########################################
+    elsif action == d7r.n
+    puts  'Price of hiking trail is ' + d7r.p, 'Location of hiking trail is ' + d7r.l, 'Is ' + d7r.n + ' family friendly? ' + d7r.ff, 'Is ' + d7r.n + ' 21 and over only? ' + d7r.o21
+    ############################################
+    elsif action == d8r.n
+    puts  'Price of hiking trail is ' + d8r.p, 'Location of hiking trail is ' + d8r.l, 'Is ' + d8r.n + ' family friendly? ' + d8r.ff, 'Is ' + d8r.n + ' 21 and over only? ' + d8r.o21
+    elsif action == d9r.n
+    puts  'Price of hiking trail is ' + d9r.p, 'Location of hiking trail is ' + d9r.l, 'Is ' + d9r.n + ' family friendly? ' + d9r.ff, 'Is ' + d9r.n + ' 21 and over only? ' + d9r.o21
+    end
+  end
+
+
+
+  
+end
+#########################################################################RESTRAUNT MAIN
+case
+when x == 1
+  puts '-----------------------------------------'
+  puts 'what restraunt would you like to see?'
+  puts '-----------------------------------------'
+  action = gets.chomp
+  puts '-----------------------------------------'
+  if action == a1r.n
+    puts  'Restraunt type is ' + a1r.ft, 'Price is ' + a1r.p, 'location is ' + a1r.l, 'Ratings for this location: ' + a1r.r,  'Is ' + a1r.n + ' family friendly? ' + a1r.f_f, 'Is ' + a1r.n + ' 21 and over only? ' + a1r.o_21
+  elsif action == a2r.n
+    puts  'Restraunt type is ' + a2r.ft, 'Price is ' + a2r.p, 'location is ' + a2r.l, 'Ratings for this location: ' + a2r.r,  'Is ' + a2r.n + ' family friendly? ' + a2r.f_f, 'Is ' + a2r.n + ' 21 and over only? ' + a2r.o_21
+  elsif action == a3r.n
+      puts  'Restraunt type is ' + a3r.ft, 'Price is ' + a3r.p, 'location is ' + a3r.l, 'Ratings for this location: ' + a3r.r,  'Is ' + a3r.n + ' family friendly? ' + a3r.f_f, 'Is ' + a3r.n + ' 21 and over only? ' + a3r.o_21
+    elsif action == a4r.n
+        puts  'Restraunt type is ' + a4r.ft, 'Price is ' + a4r.p, 'location is ' + a4r.l, 'Ratings for this location: ' + a4r.r,  'Is ' + a4r.n + ' family friendly? ' + a4r.f_f, 'Is ' + a4r.n + ' 21 and over only? ' + a4r.o_21
+      elsif action == a5r.n
+          puts  'Restraunt type is ' + a5r.ft, 'Price is ' + a5r.p, 'location is ' + a5r.l, 'Ratings for this location: ' + a5r.r,  'Is ' + a5r.n + ' family friendly? ' + a5r.f_f, 'Is ' + a5r.n + ' 21 and over only? ' + a5r.o_21
+        elsif action == a6r.n
+    puts 'Restraunt type is ' + a6r.ft, 'Price is ' + a6r.p, 'location is ' + a6r.l, 'Ratings for this location: ' + a6r.r,  'Is ' + a6r.n + ' family friendly? ' + a6r.f_f, 'Is ' + a6r.n + ' 21 and over only? ' + a6r.o_21
+  end
+end
+############################################################################HIKING MAIN
+case
+when x == 3
+  puts '-----------------------------------------'
+  puts 'what hiking would you like to explore? '
+  puts '-----------------------------------'
+  action = gets.chomp
+  puts '---------------------------------------'
+  if action == d0r.n
+
+    puts  'Price of hiking trail is ' + d0r.p, 'Location of hiking trail is ' + d0r.l, 'Is ' + d0r.n + ' family friendly? ' + d0r.ff, 'Is ' + d0r.n + ' 21 and over only? ' + d0r.o21
+    ########################
+  elsif action == d1r.n
+ 
+    puts  'Price of hiking trail is ' + d1r.p, 'Location of hiking trail is ' + d1r.l, 'Is ' + d1r.n + ' family friendly? ' + d1r.ff, 'Is ' + d1r.n + ' 21 and over only? ' + d1r.o21
+    #########################
+  elsif action == d2r.n
+ 
+    puts  'Price of hiking trail is ' + d2r.p, 'Location of hiking trail is ' + d2r.l, 'Is ' + d2r.n + ' family friendly? ' + d2r.ff, 'Is ' + d2r.n + ' 21 and over only? ' + d2r.o21
+    #############################
+  elsif action == d3r.n
+    
+    puts  'Price of hiking trail is ' + d3r.p, 'Location of hiking trail is ' + d3r.l, 'Is ' + d3r.n + ' family friendly? ' + d3r.ff, 'Is ' + d3r.n + ' 21 and over only? ' + d3r.o21
+    ############################################
+  elsif action == d4r.n
+   
+    puts  'Price of hiking trail is ' + d4r.p, 'Location of hiking trail is ' + d4r.l, 'Is ' + d4r.n + ' family friendly? ' + d4r.ff, 'Is ' + d4r.n + ' 21 and over only? ' + d4r.o21
+    ##################################
+  elsif action == d5r.n
+ 
+    puts  'Price of hiking trail is ' + d5r.p, 'Location of hiking trail is ' + d5r.l, 'Is ' + d5r.n + ' family friendly? ' + d5r.ff, 'Is ' + d5r.n + ' 21 and over only? ' + d5r.o21
+    #####################################
+  elsif action == d6r.n
+   
+    puts  'Price of hiking trail is ' + d6r.p, 'Location of hiking trail is ' + d6r.l, 'Is ' + d6r.n + ' family friendly? ' + d6r.ff, 'Is ' + d6r.n + ' 21 and over only? ' + d6r.o21
+    #########################################
+  elsif action == d7r.n
+ 
+    puts  'Price of hiking trail is ' + d7r.p, 'Location of hiking trail is ' + d7r.l, 'Is ' + d7r.n + ' family friendly? ' + d7r.ff, 'Is ' + d7r.n + ' 21 and over only? ' + d7r.o21
+    ############################################
+  elsif action == d8r.n
+
+    puts  'Price of hiking trail is ' + d8r.p, 'Location of hiking trail is ' + d8r.l, 'Is ' + d8r.n + ' family friendly? ' + d8r.ff, 'Is ' + d8r.n + ' 21 and over only? ' + d8r.o21
+  elsif action == d9r.n
+
+    puts  'Price of hiking trail is ' + d9r.p, 'Location of hiking trail is ' + d9r.l, 'Is ' + d9r.n + ' family friendly? ' + d9r.ff, 'Is ' + d9r.n + ' 21 and over only? ' + d9r.o21
+  end
+end
+##################################################################################MUSEUMS MAIN
+case
+when x == 5
+
+  puts '-------------------------------------'
+  puts 'what Museum would you like to explore? '
+  puts '-----------------------------------'
+  action = gets.chomp
+  puts '---------------------------------------'
+###################################################  
+  if action == b2r.n
+
+    puts  'Price of museum is ' + b2r.p, 'Location of museum is ' + b2r.l, 'Is ' + b2r.n + ' family friendly? ' + b2r.ff, 'Is ' + b2r.n + ' 21 and over only? ' + b2r.o21
+#####################################################################################    
+  elsif action == b3r.n
+ 
+    puts  'Price of museum is ' + b3r.p, 'Location of museum is ' + b3r.l, 'Is ' + b3r.n + ' family friendly? ' + b3r.ff, 'Is ' + b3r.n + ' 21 and over only? ' + b3r.o21
+####################################################
+  elsif action == b4r.n
+
+    puts  'Price of museum is ' + b4r.p, 'Location of museum is ' + b4r.l, 'Is ' + b4r.n + ' family friendly? ' + b4r.ff, 'Is ' + b4r.n + ' 21 and over only? ' + b4r.o21
+  ####################################################
+  elsif action == b5r.n
+
+    puts  'Price of museum is ' + b5r.p, 'Location of museum is ' + b5r.l, 'Is ' + b5r.n + ' family friendly? ' + b5r.ff, 'Is ' + b5r.n + ' 21 and over only? ' + b5r.o21
+   ####################################################
+  elsif action == b6r.n
+
+    puts  'Price of museum is ' + b6r.p, 'Location of museum is ' + b6r.l, 'Is ' + b6r.n + ' family friendly? ' + b6r.ff, 'Is ' + b6r.n + ' 21 and over only? ' + b6r.o21
+   ####################################################
+  elsif action == b7r.n
+
+    puts  'Price of museum is ' + b7r.p, 'Location of museum is ' + b7r.l, 'Is ' + b7r.n + ' family friendly? ' + b7r.ff, 'Is ' + b7r.n + ' 21 and over only? ' + b7r.o21
+   ####################################################
+  elsif action == b8r.n
+
+    puts  'Price of museum is ' + b8r.p, 'Location of museum is ' + b8r.l, 'Is ' + b8r.n + ' family friendly? ' + b8r.ff, 'Is ' + b8r.n + ' 21 and over only? ' + b8r.o21
+   ####################################################
+  elsif action == b9r.n
+ 
+    puts  'Price of museum is ' + b9r.p, 'Location of museum is ' + b9r.l, 'Is ' + b9r.n + ' family friendly? ' + b9r.ff, 'Is ' + b9r.n + ' 21 and over only? ' + b9r.o21
+   ####################################################
+  elsif action == bzr.n
+  
+    puts  'Price of museum is ' + bzr.p, 'Location of museum is ' + bzr.l, 'Is ' + bzr.n + ' family friendly? ' + bzr.ff, 'Is ' + bzr.n + ' 21 and over only? ' + bzr.o21
+   ####################################################
+  elsif action == bxr.n
+
+    puts  'Price of museum is ' + bxr.p, 'Location of museum is ' + bxr.l, 'Is ' + bxr.n + ' family friendly? ' + bxr.ff, 'Is ' + bxr.n + ' 21 and over only? ' + bxr.o21
+  end
+end
+####################################################################################CLIMBING MAIN
+case
+when x == 4
+
+  puts '-------------------------------------'
+  puts 'what climbing would you like to explore? '
+  puts '-----------------------------------'
+  action = gets.chomp
+  puts '---------------------------------------'
+###################################################  
+  if action == c0r.n
+
+    puts  'Price of climbing in this area is: ' + c0r.p, 'Location is: ' + c0r.l, 'Is ' + c0r.n + ' family friendly? ' + c0r.ff, 'Is ' + c0r.n + ' 21 and over only? ' + c0r.o21
+    #####################################################################################
+    elsif action == c1r.n
+
+      puts  'Price of climbing in this area is: ' + c1r.p, 'Location is: ' + c1r.l, 'Is ' + c1r.n + ' family friendly? ' + c1r.ff, 'Is ' + c1r.n + ' 21 and over only? ' + c1r.o21
+    #####################################################################################
+        elsif action == c2r.n
+
+          puts  'Price of climbing in this area is: ' + c2r.p, 'Location is: ' + c2r.l, 'Is ' + c2r.n + ' family friendly? ' + c2r.ff, 'Is ' + c2r.n + ' 21 and over only? ' + c2r.o21
+    #####################################################################################
+        elsif action == c3r.n
+  
+          puts  'Price of climbing in this area is: ' + c3r.p, 'Location is: ' + c3r.l, 'Is ' + c3r.n + ' family friendly? ' + c3r.ff, 'Is ' + c3r.n + ' 21 and over only? ' + c3r.o21
+    #####################################################################################
+        elsif action == c4r.n
+  
+          puts  'Price of climbing in this area is: ' + c4r.p, 'Location is: ' + c4r.l, 'Is ' + c4r.n + ' family friendly? ' + c4r.ff, 'Is ' + c4r.n + ' 21 and over only? ' + c4r.o21
+    #####################################################################################
+        elsif action == c5r.n
+ 
+          puts  'Price of climbing in this area is: ' + c5r.p, 'Location is: ' + c5r.l, 'Is ' + c5r.n + ' family friendly? ' + c5r.ff, 'Is ' + c5r.n + ' 21 and over only? ' + c5r.o21
+    #####################################################################################
+        elsif action == c6r.n
+
+          puts  'Price of climbing in this area is: ' + c6r.p, 'Location is: ' + c6r.l, 'Is ' + c6r.n + ' family friendly? ' + c6r.ff, 'Is ' + c6r.n + ' 21 and over only? ' + c6r.o21
+    #####################################################################################
+        elsif action == c7r.n
+       
+          puts  'Price of climbing in this area is: ' + c7r.p, 'Location is: ' + c7r.l, 'Is ' + c7r.n + ' family friendly? ' + c7r.ff, 'Is ' + c7r.n + ' 21 and over only? ' + c7r.o21
+    #####################################################################################
+        elsif action == c8r.n
+   
+          puts  'Price of climbing in this area is: ' + c8r.p, 'Location is: ' + c8r.l, 'Is ' + c8r.n + ' family friendly? ' + c8r.ff, 'Is ' + c8r.n + ' 21 and over only? ' + c8r.o21
+    #####################################################################################
+        elsif action == c9r.n
+       
+          puts  'Price of climbing in this area is: ' + c9r.p, 'Location is: ' + c9r.l, 'Is ' + c9r.n + ' family friendly? ' + c9r.ff, 'Is ' + c9r.n + ' 21 and over only? ' + c9r.o21
+    #####################################################################################
+        elsif action == c10r.n
+      
+          puts  'Price of climbing in this area is: ' + c10r.p, 'Location is: ' + c10r.l, 'Is ' + c10r.n + ' family friendly? ' + c10r.ff, 'Is ' + c10r.n + ' 21 and over only? ' + c10r.o21
+    #####################################################################################
+  end
+end
+############################################################################################################SKIING MAIN
+case
+when x == 6
+ 
+  puts '-------------------------------------'
+  puts 'what Skiing would you like to explore? '
+  puts '-----------------------------------'
+  action = gets.chomp
+  puts '---------------------------------------'
+###################################################  
+  if action == e0r.n
+  
+    puts  'Price of Skiing in this area is: ' + e0r.p, 'Location is: ' + e0r.l, 'Is ' + e0r.n + ' family friendly? ' + e0r.ff, 'Is ' + e0r.n + ' 21 and over only? ' + e0r.o21
+    #####################################################################################
+    elsif action == e1r.n
+   
+    puts  'Price of Skiing in this area is: ' + e1r.p, 'Location is: ' + e1r.l, 'Is ' + e1r.n + ' family friendly? ' + e1r.ff, 'Is ' + e1r.n + ' 21 and over only? ' + e1r.o21
+    #####################################################################################
+        elsif action == e2r.n
+   
+    puts  'Price of Skiing in this area is: ' + e2r.p, 'Location is: ' + e2r.l, 'Is ' + e2r.n + ' family friendly? ' + e2r.ff, 'Is ' + e2r.n + ' 21 and over only? ' + e2r.o21
+    #####################################################################################
+        elsif action == e3r.n
+ 
+    puts  'Price of Skiing in this area is: ' + e3r.p, 'Location is: ' + e3r.l, 'Is ' + e3r.n + ' family friendly? ' + e3r.ff, 'Is ' + e3r.n + ' 21 and over only? ' + e3r.o21
+    #####################################################################################
+        elsif action == e4r.n
+    
+    puts  'Price of Skiing in this area is: ' + e4r.p, 'Location is: ' + e4r.l, 'Is ' + e4r.n + ' family friendly? ' + e4r.ff, 'Is ' + e4r.n + ' 21 and over only? ' + e4r.o21
+    #####################################################################################
+        elsif action == e5r.n
+    
+    puts  'Price of Skiing in this area is: ' + e5r.p, 'Location is: ' + e5r.l, 'Is ' + e5r.n + ' family friendly? ' + e5r.ff, 'Is ' + e5r.n + ' 21 and over only? ' + e5r.o21
+    #####################################################################################
+        elsif action == e6r.n
+   
+    puts  'Price of Skiing in this area is: ' + e6r.p, 'Location is: ' + e6r.l, 'Is ' + e6r.n + ' family friendly? ' + e6r.ff, 'Is ' + e6r.n + ' 21 and over only? ' + e6r.o21
+    #####################################################################################
+        elsif action == e7r.n
+     
+    puts  'Price of Skiing in this area is: ' + e7r.p, 'Location is: ' + e7r.l, 'Is ' + e7r.n + ' family friendly? ' + e7r.ff, 'Is ' + e7r.n + ' 21 and over only? ' + e7r.o21
+    #####################################################################################
+        elsif action == e8r.n
+    
+    puts  'Price of Skiing in this area is: ' + e8r.p, 'Location is: ' + e8r.l, 'Is ' + e8r.n + ' family friendly? ' + e8r.ff, 'Is ' + e8r.n + ' 21 and over only? ' + e8r.o21
+    #####################################################################################
+        elsif action == e9r.n
+    
+    puts  'Price of Skiing in this area is: ' + e9r.p, 'Location is: ' + e9r.l, 'Is ' + e9r.n + ' family friendly? ' + e9r.ff, 'Is ' + e9r.n + ' 21 and over only? ' + e9r.o21
+    #####################################################################################
+        elsif action == e10r.n
+     
+    puts  'Price of Skiing in this area is: ' + e10r.p, 'Location is: ' + e10r.l, 'Is ' + e10r.n + ' family friendly? ' + e10r.ff, 'Is ' + e10r.n + ' 21 and over only? ' + e10r.o21
+    #####################################################################################
+        elsif action == e11r.n
+   
+    puts  'Price of Skiing in this area is: ' + e11r.p, 'Location is: ' + e11r.l, 'Is ' + e11r.n + ' family friendly? ' + e11r.ff, 'Is ' + e11r.n + ' 21 and over only? ' + e11r.o21
+    #####################################################################################
+        elsif action == e12r.n
+    
+    puts  'Price of Skiing in this area is: ' + e12r.p, 'Location is: ' + e12r.l, 'Is ' + e12r.n + ' family friendly? ' + e12r.ff, 'Is ' + e12r.n + ' 21 and over only? ' + e12r.o21
+    #####################################################################################
+  end
+end
